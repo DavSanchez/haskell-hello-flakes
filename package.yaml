@@ -1,0 +1,35 @@
+name: haskell-hello-flakes
+version: 0.1.0.0
+license: MIT
+author: "David Sánchez"
+dependencies:
+  - base ^>=4.15.1.0
+  - text
+  - containers
+  - process
+  - filepath ^>=1.4.100.0
+  - http-conduit
+  - bytestring
+  - aeson
+  - lens
+  - lens-aeson
+  - yaml
+executables:
+  haskell-hello-flakes:
+    main: Main.hs
+    ghc-options:
+      - -threaded
+      - -Wall
+      - -Wcompat
+      - -Widentities
+      - -Wincomplete-uni-patterns
+      - -Wincomplete-record-updates
+      - -Wredundant-constraints
+      - -Wnoncanonical-monad-instances
+      - -fhide-source-paths
+      - -Wmissing-export-lists
+      - -Wpartial-fields
+      - -Wmissing-deriving-strategies
+      - -fwrite-ide-info
+      - -hiedir=.hie
+      - -Wunused-packages

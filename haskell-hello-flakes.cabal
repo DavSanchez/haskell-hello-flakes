@@ -1,0 +1,31 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.7.
+--
+-- see: https://github.com/sol/hpack
+
+name:           haskell-hello-flakes
+version:        0.1.0.0
+author:         David Sánchez
+maintainer:     david.sanchez@externals.adidas.com
+license:        MIT
+build-type:     Simple
+
+executable haskell-hello-flakes
+  main-is: Main.hs
+  other-modules:
+      Paths_haskell_hello_flakes
+  ghc-options: -threaded -Wall -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wredundant-constraints -Wnoncanonical-monad-instances -fhide-source-paths -Wmissing-export-lists -Wpartial-fields -Wmissing-deriving-strategies -fwrite-ide-info -hiedir=.hie -Wunused-packages
+  build-depends:
+      aeson
+    , base >=4.15.1.0 && <4.16
+    , bytestring
+    , containers
+    , filepath >=1.4.100.0 && <1.5
+    , http-conduit
+    , lens
+    , lens-aeson
+    , process
+    , text
+    , yaml
+  default-language: Haskell2010
